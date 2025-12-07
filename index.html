@@ -2,13 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DevOps Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Project - Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .pdf-container {
+            margin: 30px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .pdf-container iframe {
+                height: 600px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>My DevOps Project</h1>
-    <p>Check out my project PDF below:</p>
-    <iframe src="DevOps_Project_modified.pdf" type="application/pdf" width="100%" height="800px" style="border: none;">
-        <p>Your browser does not support PDFs. <a href="DevOps_Project_modified.pdf">Download the PDF</a>.</p>
-    </iframe>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 DevOps Project</h1>
+            <p>Comprehensive DevOps Documentation & Practices</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Welcome to the DevOps Project</h2>
+                <p>
+                    This project showcases modern DevOps principles, practices, and methodologies. 
+                    Explore the comprehensive documentation below to learn about automation, CI/CD pipelines, 
+                    infrastructure as code, and best practices in software development and operations.
+                </p>
+            </div>
+
+            <div class="pdf-container">
+                <iframe src="DevOps_Project_modified.pdf" type="application/pdf">
+                    <p>Your browser does not support PDFs. 
+                        <a href="DevOps_Project_modified.pdf" class="download-btn">Download the PDF</a>
+                    </p>
+                </iframe>
+            </div>
+
+            <div class="download-section">
+                <p style="margin-bottom: 15px; color: #666;">
+                    <strong>Prefer to read offline?</strong>
+                </p>
+                <a href="DevOps_Project_modified.pdf" download class="download-btn">
+                    📥 Download PDF Documentation
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>DevOps Project</strong></p>
+            <p>Practicum Project | Last Updated: August 2025</p>
+        </div>
+    </div>
 </body>
 </html>
